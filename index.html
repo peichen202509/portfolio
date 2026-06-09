@@ -47,16 +47,18 @@
         </div>
     </header>
 
-    <!-- 3. 專業證照與培訓認證區塊 -->
+    <!-- 3. 專業證照與培訓認證區塊 (已調整為 4 欄並列顯示) -->
     <section id="about" class="py-20 max-w-5xl mx-auto px-6">
         <h2 class="text-3xl font-bold text-slate-900 mb-2 text-center">專業證照與培訓認證</h2>
         <div class="w-12 h-1 bg-indigo-600 mx-auto mb-12"></div>
         
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch mb-12">
-            <!-- 證照 1：長照小卡 -->
-            <div class="bg-white rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition">
+        <!-- 卡片網格：調整為在 lg (大螢幕) 下 4 欄並列，並優化 gap 縮小卡片間隙 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch mb-12">
+            
+            <!-- 證照 1：長期照顧服務小卡 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition duration-300">
                 <div class="p-1.5 pb-0">
-                    <div class="w-full h-44 bg-slate-50 rounded-lg border border-slate-100 overflow-hidden flex items-center justify-center relative">
+                    <div class="w-full h-44 bg-slate-50 rounded-xl border border-slate-100 overflow-hidden flex items-center justify-center relative">
                         <!-- 預設背景圖標 -->
                         <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-5xl bg-slate-100">
                             <i class="fa-solid fa-id-card"></i>
@@ -67,15 +69,46 @@
                              onerror="this.style.display='none';">
                     </div>
                 </div>
-                <div class="p-4 text-center flex-grow flex flex-col justify-center items-center">
-                    <span class="text-emerald-600 text-xs font-semibold bg-emerald-50 px-2.5 py-1 rounded-full inline-block">長照服務人員小卡</span>
+                <div class="p-4 md:p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[9px] font-semibold rounded mb-2.5">國家級專業證明</span>
+                        <h3 class="text-sm font-bold text-slate-800 mb-2">照顧服務員證明 (長照服務人員小卡)</h3>
+                        <p class="text-slate-500 text-[10px] leading-relaxed mb-3.5">
+                            依據衛生福利部法規及長期照顧服務訓練認證辦法，驗證具備國家照顧服務員專業核心學術科實務技術，可於第一線長照機構、居家或社區提供專業身體照顧與日常生活支持服務。
+                        </p>
+                        
+                        <!-- 核心評量領域 -->
+                        <div class="mb-3.5">
+                            <h4 class="text-slate-800 font-semibold text-[11px] mb-2">核心專業領域：</h4>
+                            <ul class="grid grid-cols-1 gap-y-1.5 text-[10px] text-slate-500 pl-1">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>身體照顧與生命徵象監測</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>日常生活照顧與安全維護</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>長照倫理實務與隱私保護</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>急症處理與意外防範知能</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 官方連結 (已更新並加上實體邊框按電樣式) -->
+                        <div class="mb-4">
+                            <a href="https://1966.gov.tw/LTC/mp-201.html" target="_blank" rel="noopener noreferrer" class="border border-slate-800 rounded-md px-2 py-0.5 text-[10px] inline-flex items-center gap-1 text-emerald-600 hover:bg-slate-50 transition">
+                                衛生福利部照顧服務專區 <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="border-slate-100 mb-2.5" />
+                        <div class="flex justify-between items-center text-[9px] text-slate-400 font-medium">
+                            <span>發證單位：衛生福利部</span>
+                            <span>照顧服務員專業資歷</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- 證照 2：MOS Word Expert -->
-            <div class="bg-white rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition duration-300">
                 <div class="p-1.5 pb-0">
-                    <div class="w-full h-44 bg-slate-50 rounded-lg border border-slate-100 overflow-hidden flex items-center justify-center relative">
+                    <div class="w-full h-44 bg-slate-50 rounded-xl border border-slate-100 overflow-hidden flex items-center justify-center relative">
                         <!-- 預設背景圖標 -->
                         <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-5xl bg-slate-100">
                             <i class="fa-regular fa-file-word"></i>
@@ -86,15 +119,46 @@
                              onerror="this.style.display='none';">
                     </div>
                 </div>
-                <div class="p-4 text-center flex-grow flex flex-col justify-center items-center">
-                    <span class="text-blue-600 text-xs font-semibold bg-blue-50 px-2.5 py-1 rounded-full inline-block">專業級國際認證</span>
+                <div class="p-4 md:p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[9px] font-semibold rounded mb-2.5">微軟專業國際認證</span>
+                        <h3 class="text-sm font-bold text-slate-800 mb-2">MOS Word Expert 專業級證照</h3>
+                        <p class="text-slate-500 text-[10px] leading-relaxed mb-3.5">
+                            依據微軟官方大綱設計，驗證在各種專業目的和情況下建立、管理和分發高階商業文件、專業專案合約、以及客製化排版範本的能力，能自訂環境並優化文件協作流程。
+                        </p>
+                        
+                        <!-- 核心評量領域 -->
+                        <div class="mb-3.5">
+                            <h4 class="text-slate-800 font-semibold text-[11px] mb-2">核心評量領域：</h4>
+                            <ul class="grid grid-cols-1 gap-y-1.5 text-[10px] text-slate-500 pl-1">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>管理文件選項和設定</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>設計進階文件與版面</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>建立進階參照與目錄索引</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>管理自訂Word元素與範本</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 官方連結 (已更新並加上實體邊框按電樣式) -->
+                        <div class="mb-4">
+                            <a href="https://learn.microsoft.com/zh-tw/credentials/certifications/exams/mo-111/" target="_blank" rel="noopener noreferrer" class="border border-slate-800 rounded-md px-2 py-0.5 text-[10px] inline-flex items-center gap-1 text-emerald-600 hover:bg-slate-50 transition">
+                                微軟官方證照資訊 <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="border-slate-100 mb-2.5" />
+                        <div class="flex justify-between items-center text-[9px] text-slate-400 font-medium">
+                            <span>發證單位：Microsoft</span>
+                            <span>Expert 專業級認證</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- 證照 3：MOS Excel Expert -->
-            <div class="bg-white rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition duration-300">
                 <div class="p-1.5 pb-0">
-                    <div class="w-full h-44 bg-slate-50 rounded-lg border border-slate-100 overflow-hidden flex items-center justify-center relative">
+                    <div class="w-full h-44 bg-slate-50 rounded-xl border border-slate-100 overflow-hidden flex items-center justify-center relative">
                         <!-- 預設背景圖標 -->
                         <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-5xl bg-slate-100">
                             <i class="fa-regular fa-file-excel"></i>
@@ -105,15 +169,46 @@
                              onerror="this.style.display='none';">
                     </div>
                 </div>
-                <div class="p-4 text-center flex-grow flex flex-col justify-center items-center">
-                    <span class="text-green-600 text-xs font-semibold bg-green-50 px-2.5 py-1 rounded-full inline-block">專業級國際認證</span>
+                <div class="p-4 md:p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[9px] font-semibold rounded mb-2.5">微軟專業國際認證</span>
+                        <h3 class="text-sm font-bold text-slate-800 mb-2">MOS Excel Expert 專業級證照</h3>
+                        <p class="text-slate-500 text-[10px] leading-relaxed mb-3.5">
+                            依據微軟官方大綱設計，驗證在各種專業目的和情況下建立、管理 and 分發專業電子試算表的能力，並能自訂 Excel 環境以符合專案需求並提高生產力。
+                        </p>
+                        
+                        <!-- 核心評量領域 -->
+                        <div class="mb-3.5">
+                            <h4 class="text-slate-800 font-semibold text-[11px] mb-2">核心評量領域：</h4>
+                            <ul class="grid grid-cols-1 gap-y-1.5 text-[10px] text-slate-500 pl-1">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>管理活頁簿選項和設定</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>管理與格式化資料</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>建立進階公式和巨集</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>管理進階圖表和表格</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 官方連結 (已更新並加上實體邊框按電樣式) -->
+                        <div class="mb-4">
+                            <a href="https://learn.microsoft.com/zh-tw/credentials/certifications/exams/mo-211/" target="_blank" rel="noopener noreferrer" class="border border-slate-800 rounded-md px-2 py-0.5 text-[10px] inline-flex items-center gap-1 text-emerald-600 hover:bg-slate-50 transition">
+                                微軟官方證照資訊 <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="border-slate-100 mb-2.5" />
+                        <div class="flex justify-between items-center text-[9px] text-slate-400 font-medium">
+                            <span>發證單位：Microsoft</span>
+                            <span>Expert 專業級認證</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- 證照 4：MOS PowerPoint -->
-            <div class="bg-white rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition">
+            <!-- 證照 4：MOS PowerPoint (已精準修正為 MO-310 正確連結，並套用 image_602e69 的邊框效果) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between overflow-hidden hover:shadow-md transition duration-300">
                 <div class="p-1.5 pb-0">
-                    <div class="w-full h-44 bg-slate-50 rounded-lg border border-slate-100 overflow-hidden flex items-center justify-center relative">
+                    <div class="w-full h-44 bg-slate-50 rounded-xl border border-slate-100 overflow-hidden flex items-center justify-center relative">
                         <!-- 預設背景圖標 -->
                         <div class="absolute inset-0 flex items-center justify-center text-slate-400 text-5xl bg-slate-100">
                             <i class="fa-regular fa-file-powerpoint"></i>
@@ -124,12 +219,45 @@
                              onerror="this.style.display='none';">
                     </div>
                 </div>
-                <div class="p-4 text-center flex-grow flex flex-col justify-center items-center">
-                    <span class="text-orange-600 text-xs font-semibold bg-orange-50 px-2.5 py-1 rounded-full inline-block">國際認證</span>
+                <div class="p-4 md:p-5 flex-grow flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[9px] font-semibold rounded mb-2.5">微軟專業國際認證</span>
+                        <h3 class="text-sm font-bold text-slate-800 mb-2">MOS PowerPoint 國際認證</h3>
+                        <p class="text-slate-500 text-[10px] leading-relaxed mb-3.5">
+                            依據微軟官方大綱設計，驗證建立、展示和分發高階商務簡報、活動企劃與視覺化報告的能力。能運用進階動畫與版面配置，大幅提升資訊傳遞與簡報成效。
+                        </p>
+                        
+                        <!-- 核心評量領域 -->
+                        <div class="mb-3.5">
+                            <h4 class="text-slate-800 font-semibold text-[11px] mb-2">核心評量領域：</h4>
+                            <ul class="grid grid-cols-1 gap-y-1.5 text-[10px] text-slate-500 pl-1">
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>設計進階簡報選項和設定</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>管理投影片母片與版面</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>建立與控制進階動畫與轉場</li>
+                                <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-1.5 text-[8px] flex-shrink-0"></i>設計多媒體與互動式元素</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 官方連結 (精確修正為 MO-310 官方考科連結，並加上實體邊框樣式) -->
+                        <div class="mb-4">
+                            <a href="https://learn.microsoft.com/zh-tw/credentials/certifications/exams/mo-310/" target="_blank" rel="noopener noreferrer" class="border border-slate-800 rounded-md px-2 py-0.5 text-[10px] inline-flex items-center gap-1 text-emerald-600 hover:bg-slate-50 transition">
+                                微軟官方證照資訊 <i class="fa-solid fa-arrow-up-right-from-square text-[8px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="border-slate-100 mb-2.5" />
+                        <div class="flex justify-between items-center text-[9px] text-slate-400 font-medium">
+                            <span>發證單位：Microsoft</span>
+                            <span>Associate 國際認證</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
 
+        <!-- 輔助專業說明區塊 -->
         <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 space-y-2">
                 <div class="text-indigo-600 text-xl font-bold flex items-center gap-2">
